@@ -22,7 +22,12 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
 
 document.getElementById('btn-withdrow').addEventListener('click', function () {
     const withdrowField = document.getElementById('withdraw-field').value;
-
-    console.log(withdrowField);
+    const currentWithdrow = document.getElementById('withdraw-current');
+    const withdrowAmount = currentWithdrow.innerText;
+    currentWithdrow.innerText = parseInt(withdrowField) + parseInt(withdrowAmount)
+    const balenceTotalField = document.getElementById('belance-total');
+    const totalBelance = balenceTotalField.innerText;
+    balenceTotalField.innerText = parseInt(totalBelance) - parseInt(withdrowField)
+    console.log(withdrowAmount)
 
 })
