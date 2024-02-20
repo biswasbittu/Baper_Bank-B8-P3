@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Inside Bank</title>
+  </head>
+  <body class="container mx-auto">
+    <header>
+      <h1 class="text-5xl font-bold text-lime-500 text-center mt-6">
+        Let's Get some
+        <samp class="text-red-700 underline uppercase">Mony</samp>
+      </h1>
+    </header>
+    <main class="bg-emerald-200 rounded-3xl">
+      <section class="md:my-12 my-8">
+        <div
+          class="grid md:grid-cols-3 gap-4 w-9/12 mx-auto text-white py-8 md:16 md:px-2"
+        >
+          <div class="bg-green-400 py-5 rounded-3xl text-center">
+            <h4 class="text-2xl">Deposit</h4>
+            <h2 class="text-5xl">$00</h2>
+          </div>
+          <div class="bg-yellow-500 py-5 rounded-3xl text-center">
+            <h4 class="text-2xl font-semibold">Withdraw</h4>
+            <h2 class="text-5xl">$00</h2>
+          </div>
+          <div class="bg-violet-700 py-5 rounded-3xl text-center">
+            <h4 class="text-2xl">Belance</h4>
+            <h2 class="text-5xl">$1200</h2>
+          </div>
+        </div>
+      </section>
+      <section class="md:my-12 my-8">
+        <h1 class="text-center font-bold text-3xl">Money Calculation</h1>
+        <div
+          class="grid md:grid-cols-2 gap-4 w-9/12 mx-auto text-white md:py-8 md:px-2"
+        >
+          <div class="bg-fuchsia-500 py-4 rounded-xl text-center px-2">
+            <h4 class="text-2xl font-semibold">Please Deposit</h4>
+            <div class="">
+              <input
+                class="border-2 border-rose-300 rounded-md p-2 w-full focus:outline-none text-black focus:border-green-700 transition duration-300"
+                id="deposit-field"
+                type="text"
+                placeholder="Please Deposit"
+              />
+              <button
+                id="btn-deposit"
+                class="bg- px-4 py-2 my-2 rounded-xl bg-lime-300 text-black font-semibold hover:bg-lime-500 hover:text-red-700"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+          <div class="bg-sky-400 py-6 rounded-xl text-center px-2">
+            <h4 class="text-2xl font-semibold">Please Withdraw</h4>
+            <div class="gap-">
+              <input
+                class="border-2 border-rose-300 rounded-md p-2 w-full focus:outline-none text-black focus:border-green-700 transition duration-300"
+                id="withdraw-field"
+                type="text"
+                placeholder="Please Withdraw"
+              />
+              <button
+                id="btn-withdrow"
+                class="bg- px-4 py-2 my-2 rounded-xl bg-lime-300 text-black font-semibold hover:bg-lime-500 hover:text-red-700"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center">
+        <button
+          id="back-btn"
+          class="bg-violet-600 hover:bg-violet-600 text-white font-bold py-3 px-6 rounded-2xl focus:outline-none focus:shadow-outline transition duration-300"
+        >
+          Back
+        </button>
+      </div>
+    </main>
+<!--     
+    <script>
+      document
+        .getElementById("back-btn")
+        .addEventListener("click", function () {
+          window.location.href = "../index.html";
+        });
+
+        
+
+        
+    </script> -->
+    <!-- <script src="./Script/login.js"></script> -->
+    <script src="./Script/calculation.js"></script>
+  </body>
+</html>
